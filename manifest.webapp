@@ -1,7 +1,7 @@
 {
-	"name"           : "CleverStyle Music",
+	"name"           : "Klif Mozika",
 	"description"    : "Simple and nice music player that supports mp3, mp4, flac and alac music files formats",
-	"version"        : "0.62.0+build-94",
+	"version"        : "0.1",
 	"launch_path"    : "/index.html",
 	"icons"          : {
 		"60"  : "/img/logo-60.png",
@@ -9,8 +9,8 @@
 		"256" : "/img/logo-256.png"
 	},
 	"developer"      : {
-		"name" : "Nazar Mokrynskyi",
-		"url"  : "http://cleverstyle.org"
+		"name" : "Mariot Tsitoara",
+		"url"  : "https://www.google.com/+TsitoaraMariot"
 	},
 	"permissions"    : {
 		"device-storage:music"  : {
@@ -27,8 +27,8 @@
 	"type"           : "privileged",
 	"default_locale" : "en",
 	"locales"        : {
-		"es" : {
-			"name"        : "CleverStyle Music",
+		"fr" : {
+			"name"        : "Klif Mozika",
 			"description" : "Reproductor de música simple y agradable que soporta los formatos de música mp3, mp4, flac y alac",
 			"permissions" : {
 				"device-storage:music"  : {
@@ -39,66 +39,6 @@
 				},
 				"audio-channel-content" : {
 					"description" : "Reproducir sonido en segundo plano"
-				}
-			}
-		},
-		"eo" : {
-			"name"        : "CleverStyle Music",
-			"description" : "Simpla kaj bela muzikludilo, kiu rekonas la dosieraranĝojn mp3, mp4, flac kaj alac",
-			"permissions" : {
-				"device-storage:music"  : {
-					"description" : "Aliro al amasmemorilo por serĉi kaj ludi muzikon"
-				},
-				"storage"               : {
-					"description" : "Akiro al IndexDB por memorigi aron kaj por nereskani la tutan aron po aplikaĵkomencigo"
-				},
-				"audio-channel-content" : {
-					"description" : "Ludi sonon fone"
-				}
-			}
-		},
-		"it" : {
-			"name"        : "CleverStyle Music",
-			"description" : "Lettore musicale semplice e carino che supporta i file mp3, mp4, flac e alac",
-			"permissions" : {
-				"device-storage:music"  : {
-					"description" : "Accesso alla memoria per cercare e suonare la musica"
-				},
-				"storage"               : {
-					"description" : "Accesso a IndexDB per memorizzare la libreria e per non scansionare l'intera libreria ad ogni avvio dell'app"
-				},
-				"audio-channel-content" : {
-					"description" : "Continua a suonare in background"
-				}
-			}
-		},
-		"ru" : {
-			"name"        : "CleverStyle Музыка",
-			"description" : "Простой и красивый музыкальный плеер, который поддерживает воспроизведение музыкальних файлов форматов mp3, mp4, flac и alac",
-			"permissions" : {
-				"device-storage:music"  : {
-					"description" : "Доступ до хранилища музыки"
-				},
-				"storage"               : {
-					"description" : "Доступ к IndexDB для хранения бмблиотеки чтобы избежать пересканирования всей библиотеки при каждом старте"
-				},
-				"audio-channel-content" : {
-					"description" : "Проигрывание музыки в фоне"
-				}
-			}
-		},
-		"uk" : {
-			"name"        : "CleverStyle Музика",
-			"description" : "Простий і красивий музичний плеєр, який підтримує відтворення музичних файлів форматів mp3, mp4, flac та alac",
-			"permissions" : {
-				"device-storage:music"  : {
-					"description" : "Доступ до сховища музики"
-				},
-				"storage"               : {
-					"description" : "Доступ до IndexDB для збереження бібліотеки щоб уникнути пересканування всієї бібліотеки при кожному запуску"
-				},
-				"audio-channel-content" : {
-					"description" : "Програвання музики в фоні"
 				}
 			}
 		}
