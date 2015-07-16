@@ -27,7 +27,7 @@ Main features:
 * Choose directory with downloaded and extracted files
 * Start Simulator (If you do not have Firefox OS Simulator extension installed yet - you have to install it)
 * Press Update in App Manager
-* Click "CleverStyle Music" icon on home screen inside simulator
+* Click "Klif Mozika" icon on home screen inside simulator
 
 # Contribute
 
