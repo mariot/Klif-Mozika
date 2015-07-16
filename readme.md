@@ -1,4 +1,4 @@
-# CleverStyle Music
+# Klif Mozika
 HTML5 application based purely on Web technologies.
 
 Application intended to be used in Firefox OS (should also work in Windows, Linux, Mac OS X and Android if Firefox browser installed).
