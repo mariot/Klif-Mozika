@@ -8,8 +8,7 @@ There are some interesting technologies used here:
 * [Web Audio API](http://www.w3.org/TR/webaudio/)
 * [Aurora.js](https://github.com/audiocogs/aurora.js) (playing and decoding of metadata from some files without native browser support)
 
-Main features of CleverStyle Music player:
-* scan and store music library
+Main features:
 * generate playlist in normal or random order
 * repeat one song, playlist or do not repeat anything
 * remember current track in playlist after app restarts (you will not listen the same songs over and over from the beginning)
@@ -19,7 +18,6 @@ Main features of CleverStyle Music player:
 * pre-installed equalizer presets
 * environment sound effects (surround) to imitate real physical spaces
 * obviously, play:) files in formats mp3, mp4, flac and alac
-* more features coming soon, feel free to suggest yours
 
 # Install from source
 
