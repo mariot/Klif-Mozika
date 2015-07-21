@@ -22,6 +22,27 @@
   on_db_ready = [];
 
   music_storage = navigator.getDeviceStorage('music');
+  
+  //sdcard = navigator.getDeviceStorage('videos');
+  
+  		//var xhr = new XMLHttpRequest();
+				//xhr.open('GET', 'musique/wheniwasyourman.mp3');
+				//xhr.responseType = 'blob';
+				//xhr.send();
+				//xhr.onload = function() {
+				//videoblob = new Blob([xhr.response], { type: 'audio/mp3' });
+				//var request = sdcard.add(videoblob);
+
+				//request.onsuccess = function () {
+				  //var name = this.result;
+				  //console.log('File "' + name + '" successfully wrote on the sdcard storage area');
+				//}
+
+				//// An error typically occur if a file with the same name already exist
+				//request.onerror = function () {
+				  //console.warn('Unable to write the file: ' + this.error);
+				//}
+				//};
 
   request = indexedDB.open('music_db', 1);
 
