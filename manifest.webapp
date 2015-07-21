@@ -1,46 +1,46 @@
 {
-	"name"           : "Klif Mozika",
-	"description"    : "Simple and nice music player that supports mp3, mp4, flac and alac music files formats",
-	"version"        : "0.1",
-	"launch_path"    : "/index.html",
-	"icons"          : {
-		"60"  : "/img/logo-60.png",
-		"128" : "/img/logo-128.png",
-		"256" : "/img/logo-256.png"
-	},
-	"developer"      : {
-		"name" : "Mariot Tsitoara",
-		"url"  : "https://www.google.com/+TsitoaraMariot"
-	},
-	"permissions"    : {
-		"device-storage:music"  : {
-			"description" : "Music storage access",
-			"access"      : "readonly"
-		},
-		"storage"               : {
-			"description" : "IndexDB access to store library and do not rescan whole library on each start"
-		},
-		"audio-channel-content" : {
-			"description" : "Play sound in background"
-		}
-	},
-	"type"           : "privileged",
-	"default_locale" : "en",
-	"locales"        : {
-		"fr" : {
-			"name"        : "Klif Mozika",
-			"description" : "Reproductor de música simple y agradable que soporta los formatos de música mp3, mp4, flac y alac",
-			"permissions" : {
-				"device-storage:music"  : {
-					"description" : "Acceso al almacenamiento de música"
-				},
-				"storage"               : {
-					"description" : "Acceso a IndexDB para guardar la biblioteca y no re-escanearla completamente en cada inicio"
-				},
-				"audio-channel-content" : {
-					"description" : "Reproducir sonido en segundo plano"
-				}
-			}
-		}
-	}
+  "name": "Klif Mozika",
+  "description": "Le lecteur de musique d'Orange Madagascar. Raikitra ny fety!",
+  "version": "0.1",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/img/logo-60.png",
+    "128": "/img/logo-128.png",
+    "256": "/img/logo-256.png"
+  },
+  "developer": {
+    "name": "Orange Madagascar",
+    "url": "https://www.orange.mg"
+  },
+  "permissions": {
+    "device-storage:music": {
+      "description": "Music storage access",
+      "access": "readwrite"
+    },
+    "storage": {
+      "description": "IndexDB access to store library and do not rescan whole library on each start"
+    },
+    "audio-channel-content": {
+      "description": "Play sound in background"
+    }
+  },
+  "type": "privileged",
+  "default_locale": "fr",
+  "locales": {
+    "fr": {
+      "name": "Klif Mozika",
+      "description": "Reproductor de música simple y agradable que soporta los formatos de música mp3, mp4, flac y alac",
+      "permissions": {
+        "device-storage:music": {
+          "description": "Acceso al almacenamiento de música"
+        },
+        "storage": {
+          "description": "Acceso a IndexDB para guardar la biblioteca y no re-escanearla completamente en cada inicio"
+        },
+        "audio-channel-content": {
+          "description": "Reproducir sonido en segundo plano"
+        }
+      }
+    }
+  }
 }

@@ -246,7 +246,7 @@
     },
     rescan: function(done_callback) {
       var found_files, known_extensions;
-      known_extensions = ['mp3', 'wave', 'm4a', 'm4b', 'm4p', 'm4r', '3gp', 'mp4', 'aac', 'ogg', 'oga', 'opus', 'flac', 'alac'];
+      known_extensions = ['mp3'];
       done_callback = (done_callback || function() {}).bind(this);
       found_files = 0;
       return this.onready(function() {
@@ -284,7 +284,8 @@
               var file;
               if (cursor.result) {
                 file = cursor.result;
-                if (known_extensions.indexOf(file.name.split('.').pop()) !== -1) {
+                //console.error(file.name);
+                if (known_extensions.indexOf(file.name.split('.').pop()) !== -1 && (file.name === 'tsikysytomany.mp3' || file.name === 'wheniwasyourman.mp3')) {
                   return db.transaction(['music']).objectStore('music').index('name').get(file.name).onsuccess = function(e) {
                     if (!e.target.result) {
                       return _this.add(file.name, function() {

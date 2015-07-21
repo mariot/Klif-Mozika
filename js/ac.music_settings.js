@@ -14,7 +14,7 @@
     settings = localStorage.settings;
     settings = settings ? JSON.parse(settings) : {
       repeat: 'all',
-      shuffle: true,
+      shuffle: false,
       equalizer_gain_levels: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       reverb_mode: '',
       low_performance: null
@@ -38,7 +38,9 @@
     }
     if (public_settings.low_performance === null) {
       document.webL10n.ready(function() {
-        public_settings.low_performance = confirm(_('low-performance-mode-details'));
+        //public_settings.low_performance = confirm(_('low-performance-mode-details'));
+        confirm(_('low-performance-mode-details'));
+        public_settings.low_performance = true;
         return location.reload();
       });
     }

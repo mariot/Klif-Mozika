@@ -148,8 +148,12 @@
                 all[i] = value.id;
               }
               return _this.set(all, callback);
-            } else if (confirm(_('library-empty-want-to-rescan'))) {
-              return _this.go_to_screen('library-rescan');
+            } //else if (confirm(_('library-empty-want-to-rescan'))) {
+				//cs.music_library.rescan();
+              //return _this.go_to_screen('library-rescan');
+            //}
+            else {
+				cs.music_library.rescan();
             }
           };
         })(this));
