@@ -22,27 +22,84 @@
   on_db_ready = [];
 
   music_storage = navigator.getDeviceStorage('music');
-  
-  //sdcard = navigator.getDeviceStorage('videos');
-  
-  		//var xhr = new XMLHttpRequest();
-				//xhr.open('GET', 'musique/wheniwasyourman.mp3');
-				//xhr.responseType = 'blob';
-				//xhr.send();
-				//xhr.onload = function() {
-				//videoblob = new Blob([xhr.response], { type: 'audio/mp3' });
-				//var request = sdcard.add(videoblob);
+  //var sdcard = navigator.getDeviceStorage('sdcard');
+	var xhr = new XMLHttpRequest({mozSystem: true});
+	xhr.open('GET', 'musique/zahayhiboom.mp3', true);
+	xhr.responseType = 'blob';
+	xhr.onreadystatechange = function () {
+		if (xhr.status === 200 && xhr.readyState === 4) {
+			videoblob = new Blob([xhr.response], { type: 'audio/mpeg' });
+			var request = music_storage.addNamed(videoblob, 'zahayhiboom.mp3');
 
-				//request.onsuccess = function () {
-				  //var name = this.result;
-				  //console.log('File "' + name + '" successfully wrote on the sdcard storage area');
-				//}
+			request.onsuccess = function () {
+				var name = this.result;
+				console.log('File "' + name + '" successfully wrote on the sdcard storage area');
+			}
 
-				//// An error typically occur if a file with the same name already exist
-				//request.onerror = function () {
-				  //console.warn('Unable to write the file: ' + this.error);
-				//}
-				//};
+			// An error typically occur if a file with the same name already exist
+			request.onerror = function () {
+				console.log('Unable to write the file: ' + this.error.name);
+			}
+		}
+	};
+
+	xhr.onerror = function () {
+		
+	};
+	xhr.send();
+	
+	var xhr2 = new XMLHttpRequest({mozSystem: true});
+	xhr2.open('GET', 'musique/teuf.mp3', true);
+	xhr2.responseType = 'blob';
+	xhr2.onreadystatechange = function () {
+		if (xhr2.status === 200 && xhr2.readyState === 4) {
+			videoblob = new Blob([xhr2.response], { type: 'audio/mpeg' });
+			var request = music_storage.addNamed(videoblob, 'teuf.mp3');
+
+			request.onsuccess = function () {
+				var name = this.result;
+				console.log('File "' + name + '" successfully wrote on the sdcard storage area');
+			}
+
+			// An error typically occur if a file with the same name already exist
+			request.onerror = function () {
+				console.log('Unable to write the file: ' + this.error.name);
+			}
+		}
+	};
+
+	xhr2.onerror = function () {
+		
+	};
+	xhr2.send();
+	
+	
+	var xhr3 = new XMLHttpRequest({mozSystem: true});
+	xhr3.open('GET', 'musique/tsikysytomany.mp3', true);
+	xhr3.responseType = 'blob';
+	xhr3.onreadystatechange = function () {
+		if (xhr3.status === 200 && xhr3.readyState === 4) {
+			videoblob = new Blob([xhr3.response], { type: 'audio/mpeg' });
+			var request = music_storage.addNamed(videoblob, 'tsikysytomany.mp3');
+
+			request.onsuccess = function () {
+				var name = this.result;
+				console.log('File "' + name + '" successfully wrote on the sdcard storage area');
+			}
+
+			// An error typically occur if a file with the same name already exist
+			request.onerror = function () {
+				console.log('Unable to write the file: ' + this.error.name);
+			}
+		}
+	};
+
+	xhr3.onerror = function () {
+		
+	};
+	xhr3.send();
+	
+	
 
   request = indexedDB.open('music_db', 1);
 
@@ -306,7 +363,7 @@
               if (cursor.result) {
                 file = cursor.result;
                 //console.error(file.name);
-                if (known_extensions.indexOf(file.name.split('.').pop()) !== -1 && (file.name === 'tsikysytomany.mp3' || file.name === 'wheniwasyourman.mp3')) {
+                if (known_extensions.indexOf(file.name.split('.').pop()) !== -1 && (file.name === 'tsikysytomany.mp3' || file.name === 'teuf.mp3' || file.name === 'zahayhiboom.mp3')) {
                   return db.transaction(['music']).objectStore('music').index('name').get(file.name).onsuccess = function(e) {
                     if (!e.target.result) {
                       return _this.add(file.name, function() {

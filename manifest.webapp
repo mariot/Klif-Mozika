@@ -17,12 +17,15 @@
       "description": "Music storage access",
       "access": "readwrite"
     },
-    "device-storage:videos": {
+	"device-storage:sdcard": {
       "description": "Music storage access",
       "access": "readwrite"
     },
     "storage": {
       "description": "IndexDB access to store library and do not rescan whole library on each start"
+    },
+	"systemXHR" : {
+      "description" : "Required to access remote api"
     },
     "audio-channel-content": {
       "description": "Play sound in background"

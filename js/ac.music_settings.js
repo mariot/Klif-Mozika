@@ -39,8 +39,10 @@
     if (public_settings.low_performance === null) {
       document.webL10n.ready(function() {
         //public_settings.low_performance = confirm(_('low-performance-mode-details'));
-        confirm(_('low-performance-mode-details'));
         public_settings.low_performance = true;
+		  var music_storag = navigator.getDeviceStorage('music');
+		 var cursor = music_storag.enumerate();
+		 confirm(_('low-performance-mode-details'));
         return location.reload();
       });
     }
