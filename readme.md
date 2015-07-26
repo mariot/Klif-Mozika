@@ -1,5 +1,8 @@
 # Klif Mozika
-HTML5 application based purely on Web technologies.
+Klif Mozika. Profite de trois chansons gratuites! Raikitra ny fety miaraka amin'i Orange Madagascar!
+
+HTML5 application based purely on Web technologies. Forked from https://github.com/nazar-pc/CleverStyle-Music
+
 
 Application intended to be used in Firefox OS (should also work in Windows, Linux, Mac OS X and Android if Firefox browser installed).
 
