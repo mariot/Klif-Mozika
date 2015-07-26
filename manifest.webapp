@@ -1,7 +1,7 @@
 {
   "name": "Klif Mozika",
-  "description": "Le lecteur de musique d'Orange Madagascar. Raikitra ny fety!",
-  "version": "0.1",
+  "description": "Klif Mozika. Profite de trois chansons gratuites! Raikitra ny fety miaraka amin'i Orange Madagascar!",
+  "version": "0.2",
   "launch_path": "/index.html",
   "icons": {
     "60": "/img/logo-60.png",
@@ -9,8 +9,8 @@
     "256": "/img/logo-256.png"
   },
   "developer": {
-	"name" : "Nazar Mokrynskyi",
-	"url"  : "http://cleverstyle.org"
+	"name" : "Orange Madagascar",
+	"url"  : "https://www.orange.mg"
 	},
   "permissions": {
     "device-storage:music": {
