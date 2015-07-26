@@ -9,15 +9,11 @@
     "256": "/img/logo-256.png"
   },
   "developer": {
-    "name": "Orange Madagascar",
-    "url": "https://www.orange.mg"
-  },
+	"name" : "Nazar Mokrynskyi",
+	"url"  : "http://cleverstyle.org"
+	},
   "permissions": {
     "device-storage:music": {
-      "description": "Music storage access",
-      "access": "readwrite"
-    },
-	"device-storage:sdcard": {
       "description": "Music storage access",
       "access": "readwrite"
     },
